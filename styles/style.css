@@ -1,0 +1,154 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+@font-face {
+    font-family: 'Vazer';
+    src: url('../fonts/vazir-Black.eot');
+    src: url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff');
+}
+
+body {
+    font-family: 'Vazer';
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(83, 83, 83);
+}
+
+body .main {
+    background-color: rgb(53, 114, 168);
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+}
+
+body>.main>h3 {
+    font-size: 20px;
+    margin: 20px auto;
+}
+
+body .main .inputs {
+    width: 100%;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+body>.main>.inputs>input {
+    height: 30px;
+    width: 70%;
+    position: absolute;
+    right: 25%;
+}
+
+#eye,
+#eyeSlash {
+    position: absolute;
+    margin-right: 35px;
+    color: rgb(40, 0, 151);
+    cursor: pointer;
+}
+
+#eye {
+    display: none;
+}
+
+#eye.active {
+    display: flex;
+}
+
+#eyeSlash.active {
+    display: none;
+}
+
+body .imagesHolder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: 200px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 100px;
+}
+
+body .imagesHolder ul {
+    background-color: #2c2c2c;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 100%;
+}
+
+body .imagesHolder ul li {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    width: 16%;
+    background-color: aliceblue;
+    display: flex;
+    height: 150px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+body .imagesHolder ul li.active {
+    position: fixed;
+    top: 10px;
+    bottom: 10px;
+    width: 90%;
+    height: 90vh;
+    margin: auto auto;
+}
+
+body .imagesHolder ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+body .imagesHolder ul li span {
+    position: absolute;
+    width: 100%;
+    background-color: #dad9d8;
+    color: rgb(0, 0, 0);
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 50px;
+    display: none;
+    opacity: 0.5;
+}
